@@ -6,6 +6,7 @@ export default class MoviesRoute extends Route {
   store;
 
   model() {
-    return this.store.findAll('movie');
+    // return this.store.findAll('movie');
+    return fetch('http://localhost:4203/api/movies');
   }
 }
